@@ -8,10 +8,9 @@ package BottomUpMergesort;
  */
 public class bottomUpMergeSort {
 
-    /**
-     * Attributes
-     */
+    /* The original list */
     private int[] originalList;
+    /* The copy list, used for swaping elements. */
     private int[] copyList;
 
     /**
