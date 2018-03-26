@@ -1,3 +1,5 @@
+package InsertionSort;
+
 /**
  * A doubly-linked list of integers supporting various sorting algorithms.
  * @author Calvin Nguyen
@@ -108,21 +110,33 @@ public class DoublyLinkedList {
         return s;
     }
 
-    private class Node {
+    public class Node {
 
         int item;
         Node prev;
         Node next;
 
-        private Node(int k) {
+        public Node(int k) {
             this.item = k;
             this.prev = this.next = null;
         }
 
-        private Node(int k, Node next, Node prev) {
+        public Node(int k, Node next, Node prev) {
             this.item = k;
             this.prev = prev;
             this.next = next;
         }
+    }
+
+    public int getSize() {
+        return size;
+    }
+
+    public Node getHead() {
+        return head;
+    }
+
+    public Node getTail() {
+        return tail;
     }
 }
